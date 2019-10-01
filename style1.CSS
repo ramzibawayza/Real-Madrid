@@ -1,0 +1,27 @@
+h2{
+    text-align: center;
+    color: white;
+}
+body{
+    background-color: black;
+
+}
+footer{
+    color: white;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 158)
+}
+p {
+    text-align: start;
+    color: rgb(161, 48, 133);
+
+}
+main h2{
+    color: rgb(175, 111, 28); 
+}
