@@ -46,14 +46,17 @@
 
     
     <script>
-   var greeting;
-    if (confirm("DO YOU LIKE THIS PAGE"))
-   {
-    greeting = 'ENJOY!';
+      var greeting;
+      var w;
+      w=prompt ("DO YOU LIKE THIS PAGE");
+    if (w==="yes")
+
+   { 
+   confirm('ENJOY!');
       } else {
-        greeting = 'TRY THIS';
+        confirm('TRY THIS');
       }
-      document.write('<p>' + greeting + '</p>');
+    //   document.write('<p>' + greeting + '</p>');
     
     
     
