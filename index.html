@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html
+<head>
+<link rel="stylesheet" href="styleSheet/style2.css">
+
+<script src="java/javaScript.js"></script>
+
+</head>
+<body>
+
+        <h2>Confirm Box</h2>
+
+
+<button onclick="myFunction()"> <q>Q1</q></button>
+
+<p id="demo"></p>
+
+<script>
+
+
+function myFunction() {
+  var txt;
+  if (confirm("DO YOU LIKE MOVIES ??")) {
+    txt = "ENJOY!";
+  } else {
+    Text="TRY";
+  }
+  document.getElementById("demo").innerHTML = txt;
+
+}
+
+
+
+
+
+
+
+</script>
+        
+
+        <script>
+        
+        var showtype = function() {
+ // input
+ var type = prompt('whould you like to wach movie?');
+ var picture;
+ while (type !== 'yes' && type !== 'no' )
+   type = prompt('please type yes or no');
+ // processing
+ if (type === 'yes') {
+   picture = '<img src=https://cdn.onebauer.media/one/empire-images/features/5857b3431eed4b23059f64e7/commando4.jpg?quality=50&width=1800&ratio=16-9&resizeStyle=aspectfill&format=jpg">'
+ } else if (type === 'no') {
+   picture = '<img src=data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8QDxAPEA8PDxUPDw8QDw4NDw8PEA8PFRYWFxcRFRUYHSggGBolHRYVITYhJSkrLjAuFyAzODMsNygtLysBCgoKDg0OGBAQFy0fHR0rLS0tLS8rLS0tLS4tLSsrLS0tLS0tKy0rKy0rKysrLS0tLSstLS0rKy0tKy0tLSstLf/AABEIAOAA4AMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAQIGBAUHAwj/xABHEAABAwIDBAYGBgYJBQEAAAABAAIDBBEFEiEGMUFRBxNhcYGRIlKCobHBFDJCYqLRIzNykrLCQ1NjZHODk/DxJCU1s+EV/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/xAAfEQEBAAIDAAMBAQAAAAAAAAAAAQIRAyExEkFRMiL/2gAMAwEAAhEDEQA/AO4oQhAIQhAIQhAIQvGpqmRi73BvIcT3BJNj2UXvDRckAcyQAtDV4846Rtyj1nWLvLcPetTNM55u9xcfvG/lyXfHgt96cryz6WWfGoG7nF/7Av7zosGXaE/ZjHe51/cPzWlQus4cY53kyrYvxyc7ixvc387ryOLVB/pD4NYPksOyFv4Y/jPyv6zP/wBSo/rT5N/JTbjFQPtg97W/ILATU+OP4fK/rbR49IPrNY7uu0/NZcOPRn6zXN7rOH5+5V5NZvFjfpqcmS4QVkcn1HtPZex8jqvdUhZ1NikrPtZh6r9ffvXLLg/K3OX9WlC19Hi8b9D6B5O3HuK2C42WeussvgQhCihCEIBCEIBCEIBCEIBIlRmlaxpc4gAbyVWsSxN0pyi7WcuLu135LeGFyZyzmLOxDGwLtisTxkO4dw49/wAVopJHOJc4lxO8k3KVkWXrxwmPjz5ZW+kmhNbZJFk0KBIUrIsginZOyECsmmhAIsnZCigLOosSfFp9Zvqnh3HgsIJ2Usl6qy2LXSVbJRdp72neO8L3VQikcxwc0kEcQrDh2IiX0T6LuXB3aF5s+PXcdsc9+s5CELk6BCEIBCEIBQllaxpc42AFyVMlVnF6/rXZWn0G7vvH1lvDD5VnPL4x44jXumdyaPqt+Z7ViWTQvbJJNR5bd9iyE0IFZFk0IFZNNCBITQgSdk7IUUk7JoQJOydkAIuhZOydk1F0jZMEgggkEagjeE7JKCwYZiHWDK7R4/EOYWeqixxaQQbEG4I4KyYfViVt9xGjh28+5efkw13HXDLfVZSEIXJ0CELyqZhGxzz9keZ4BBrcdrbDqmnVw9M8m8vH/e9aFekshc4uOpcblQK92GPxmnlyy3dkhMBOy0yVkWUgE7IqCdk7IsoFZFk0WQKydk7IQJOyadlFRsnZOydk2pWTsnZFlArJp2Tsio2RZSsiyghZe1HUGN4cO5w5jkvOyLJexamPDgHA3BFwexSWpwSp3xnvb8x8/NbZeXKauneXcC0mP1Fy2McPSd38B/vmt042Fzw1KqdRKXvc8/aJPhwC6cOO7v8AGOS9aeVkWUghelw0jZOyYCYCLogE7J2UgFNqiAkQp2RZTY87J2UsqLK7EbIspIU2EAnZMBOyCNk7KVk7KKjZFlJFkCRZOydkCRZYmL4g2mgkqHtc5sTcxayxcdQLC5A4rG2dx+CuidJDnGR2R7JWhrmutfgSCLcQVNjZosmhUETy1wcN7TdWeN4c0OG4gEKrrc4LLdhb6p07j/8AbrlyzrbeF709cWlywu+96I8d/uuq2tzj79GN7S7y0HxK1FlvimsWeT0kWTVa252k+hQhkZHXTAiPj1bRvlI9w7e4rduu2ZEdqNsYKImNo66a36tps2O+4yO4dw17t6ok23eJOeHiZjADfqmRR9X3G4LiPFZ2w2ygrM9TVZ3R5nBrczg6eT7TnO32B5G5N+WvvtzsZHTx/SqUODGkCaElz8gJsJGk62uQCDzvuXK3KzbU0v2z2KNq6WKoaMucEPb6kjSQ5vdcHwstmAqb0VB30B9930qXL+zkj3eOZXMBbl3EFkWT7eW88lCKZj75HtfbfkcHW77IJWSsp2RZXa6edl41tXHBG+aVwYyMZnOPAfMk2FuJKybKh9K/XujpYY45HtfJI5/VMc+72gBjSGj7zjbs7FLdRNNPjHSTUOcRSxshYNz5W9ZK7ttfK3u171rINvsTabmdkn3JIIQ38Aafes/B+jeqlaHzyNpQdQwt62XxaCA3zv2L1xno0niYZKeYVGUXMRZ1chH3Tchx7NFy/wBetdLLsntzFWOEMrRBMfqi945TyaTqHfdPgSrfZfOIJB4tIOhFw5rh7wQV2/YfHDW0bXvN5Yj1U3a4DR/tCx778lrHLZpv7IsiV7WNc9zg1rQXOc4gNa0akk8AtXg20dJWPkjp5HSGIBzz1cjWgE2HpOAvx8lraNpZOylZY+JVjKeGWeT6sTHPdbeQBuHad3im1afbt1sMqz/ZgeJe0fNVPoeeb1reFqZ3j+lH5eS0+0e3k9ZA+n6iKFkhZms58j/RcHAZtBvA4LV7M7RVFC9/0dkbzMGBzZGPeSGZiLBrgftFc7l3s07XitaKeCWdzXOEMbpHNZbMQ0X0votJs9tpSVrxC3rIpCCWxzADPbU5XAkE21todDyTosSfX4XUvlhMLnRVMRYc1jZhs5txexv5grk+y7yK6jI0/wCqp93IvaD7iVq5eGnelmYTJllA9YEfP5LEKlE7K5ruTgfIrVm4k6rJxx15AOTB8StfZZuL/rndzfgsRXD+YmXtRcQASTYAEkncAN5XC8dxF9dWPlFz1r2xwMPBl8sbezffvcV1Xb+sMOHTkaGQNhHdIQHfhzLmewtN1mJUoIuGvdIf8trnD3hqxnd2RY7FhdC2nhigZuiY1gPMje7vJufFetZSsmikikF2ysdG8A2u1wsdeG9eksjWNL3ODWtBLnOIa1oG8kncFRcb6SYmEspIuuI066W7I/Zb9Zw8lu2RIueE4dFSwsgiBDIwQLm5JJJLieJJJKMXxKOlp5KiW+WNt7C13OOjWDtJIHiuVP6RMRJvmgb2Nh095JVsmjdiODRzVsv0cNc+oe+GPR0UZeAMpO8jUdttFn5S+LpzzaDaKprnkzPIZe7KdpPVMHDT7R+8de7ctXBIWOD43Fjm7nxuLXNPYRqFe+jTZyGofLVTMzxxPyQxS2cC+2YufpZ2UFvC1ydNAr3tDs3T1kLozHGx+U9VM1gDo38NR9nmOIWPjb2rQ9Hm1r6q9LUG8rG5o5NAZmDeD94ad47irvZcG2be+nxKmuMro6tkLxyzP6p48nOC73ZaxvQjZaHa/aRmHw5rB8sl2wxE2uRve77ouPMDirBZcG2uxZ1bWyyNOZubqqccOrabNt+0bu9pMstQdK6OzUzQy1tTLJIal9o2OJEbIoyRdjNzbuLt3BoVtXhhtG2CGKBu6GNkY9kAXWTZWDkPSlgwgqm1DBZtUHF4A0E7bZj7QIPeHL26Iqstq5oeEtPn9qNwt7nuVm6VqYOw7PxhqInj2rsI/H7lSOjWYR15kcbNjpqh7zyY1oJKxeslWDpWx8jLQRutcNkqSOW9kX8x9lb/AKNcJFPQMeR6dUevceOQ6Rjuy2Pe4rks0slbV5nfXq6ho55TI4Na3wuB4L6EiiDWtY0WDQGtHJoFgFZ3do0uM7V0VHM2CeRzHOaH6RveGtJIBcQOYPkvfHMOZX0b4Wy5WTiJzZorPBaHtkBHAg5beK5H0iVnW4nUW1ERZCPYaM34i5dQ6PYS3C6UEk3Y94vwa6R7gPIhJd9Cjbe7K0lBSQGESOkfOGOlleSXMDHkjKLNGuXcFtOh2G0VXJ60kMd+xrXOt+NeXTJUa0cXZPIfwNH8y2fRHDagkd69VIR3BkbfiCpP6FurxeKX/Ck/hK4VsdHmr6If3iF37pDvku7V/wCpl/wpP4SuLdG8GfE6bkwSvPcI3Ae8hXL2DtlkWUrIsto9sVH6Z3s/ALEss7F2/pe9oPxHyWGmP8wy9Ubpafajgb61UL+Ecn5qqdGbgMSjB+1FMG9+W/wBVv6WICaKJ4/o6lhPc5j2/Gy5xs3XCnrKacmwZM3OTpaN3ouPg1xWMv6WeOubV7Py1wjiFT1ETSXSsbHndK7TLrmGg10568Bbnm2uy0OHthyTvkdK5/oPa0WY0C7rjtIHj2LsllxzaqofiddUugIdHR08jmkk2MUOr3DmXOcbcxZXORIqTtx7l1LpMqRT0FNRx2aJC1paP6mFrdP3jH5Lm1BFnmhj/rJYmfvOA+avHTCT9IpeXUyW784v8lieVpZ+jCMDDIj68k7j3iQt/lCtipfRRWB9AYuMEzwR91/pg+ZcPAq5vcGgucQA0EuJ3ADUkrpPEciq6MP2j6tu76bFKR+y1szvg5dfXNOj1hq8TrMRI9EF/V3HGU+iO8Rtt7S6ZZTEaraipMVDVyNNi2nlynk4tIB8yFwvBQPpVKDu+k04Pd1jbrt220RdhtYBwp3u8G+kfguDseWkOabFpDmnk4agrOXpH0nZKyxMFxFlVTxVDN0rA4j1XbnMPaHAjwWatipdKDgMLlHrSU4Hf1jXfAFcvwUFlNiE44U8dMOV6iVub8Eb/NXbpixEBlNSg6lzqh4vua0FjL95c/8AdWoxLCXU2z8RcCH1VXFNIDoQwsf1bT4BptzcVi+q0uwkIfidG06/pS/xYxzx/Cu3YnXNp4Jah/1YY3PI52GjR2k2HiuM9Gw/7rS/5/8A6ZFcukjEHTy0+EQG755I3T21ytvdjT73nsYOaTqDlU0rnudI83c9znvPN7iST5kr6A2WhyUFGw720lPfv6tt/fdcCxGDq5Zogb9VJLGHEWvkcW3tw3L6Kw1toIRyhiH4QmKOQ9K9VnxHJf8AU08TCOTnZpD7ntV46L47YXCfWkqHeUjm/wAq5htrP1mJVjv7w5n+naP+VdZ6PWWwuk7WSO85Hn5pPRssekyUlU/1aad3kxy5n0Q0uasmk4RU2X2pHtt7mOXUcXofpFPNT5izronxZwMxbmBF7cd6w9m9noKCIxw5nF5zSSvIL5HDQXtoAOAHxuVbOxtLIspWRZaRl40zVjuYI8v+VrlusVjvHf1SD4bvmtPZTjv+Wsp2022GHGpoKmJou7q88YG8yRkPaB3ltvFcHGvivpJcc2+2VkpZnzxMLoJXF92AkQPOrmO5NvqDu1tw1mc+0jyft3VmiFJZoOTqzUgu6wxWtltwdbTN89VZ+jnA8mH1M7xY1ccjGdkDWuAPiS49waqZsfs3JXzAAEQsIM8w3BvqNPF592/v7jHC1rBG1oa1rAxrQLBrQLBoHKymPfdHCNioOsxCib/bsf8A6d5P5V0DpbwwyU0VS0XNPIWv7IpbC/7zWeZVY6J6Mur85GlPBI6/JzrMHuc7yXYKiBkjHRyND2vaWPY4XDmkWIKYzocJ2S2ifh9R1rW52PAZNFe2du8EHg4a27yOKsO1e3rqyL6LSwyxiazJC/KZZLm3VNa0nQmw367rL2xTotnEhNLPC6MklrakyMewerdrXB3forJsfsJFROE8rxPMPqENtHDfeWg6l33j4AJJfBtNjcD+g0ccJtndeScjjK61xfiAAG+yt5ZNC2POeFr2PjcLte1zHDm1wsR5FfOuJUL6eaWnk+tC9zD223O7iLHuK+jlTNv9jDWgVFPlE7G5S1xytnYNwJ4OHA7uB4EZymxR9hdr3UDzFKHPgkddwbq6J+7rGjiN1x2XGuh6NW7d4bHEZBUNmNrtihDjI48rEej7VlxirwyoidklgmjcDaz43i57NNfBb/ZvYSsq3B0jHU0X2pZmlr3DlGw6k9psO/csy3xWZs5h8uM4i+qqG/omOa6Uallh9SmbfeLWv2XOhcFfekaiM2GVAaNYgyYD7sbgXfhzLd4ThkNLCyCBmRjBoN5ceLnHi481lloIIIBBFiDqCOS1J0j5vw+tlp5WTwvyPjJLHgNNiQQdCLHQkeK6R0WYPJI+XFKgue6QvZC5+rnkn9JL/KPa7Fly9FlKZ84nlbEXZjTBova98jZL3DeG69uPFXungZGxsbGhjWNDWMaLNa0CwACkiuAbaUZhxCsjI3zySN/Zl/SC373uXd8JeHU9O4bnQQuFuRYCqP0sbOOlY2uibmdC3JUNaLkwgktk9kk37DfgrF0fVzZ8MpSDrFGIHDkYvRHm0NPik6o4xtIwtrqwO0Iq6n3yOI9xC7NsD/4uj/wj/G5U3pU2Ye2U4hC0uY8D6SGgkxvaLCW3qkAA8iL8VY+iurEmGMZe5glmjd4u6we548knVGH0rY1LTwQwRPdGakyZ3sJDuqZlu0HhcvHgDzWt6GXyf9YzXq29Q4D7IkOe9u0gC/cFcNqtloMRbGJXSRmFzix8WW9nWzNOYEWNm+Sy8BwOCih6mBpAuXOc45nyPNhmceegHLRXXe0bBNouQOaLL3o2Xkb2G/krRtZWZmlvMELQFttOWhViWoxGLK+/B2vjx/32rnx36bzjEshNOy6sINbbQC3YNFIJ2RZBUuj7ZqSijndM0Nknl+qCHZYWE5NRprdx7iFbQmnZSdBITsnZUJCdk1AkJ2RZABFk7JopWRZNNQJCdkWRSssLDsKp6brOoibF1z+skay4aX2tcN3N0HABZ1kIIrEosOggzmGGOLrXZ5BE0MDnbsxA0usxJERQmhEJZ2GR/Wd4D5/JYVluKePK0Dz71nO9NYzt6LwrIc7COI1H5L3QuUunRoLIssuugyuzDc73FY1l6JduVmiATsnZCIVk7JpoqNk7JoshorIspWRZTZokWUrJhFRsiynZPKmxBCmWqJCgSE7JhpQRQpZUZUEErL0ypWTYhZKy9chTERU2aToYruvwbr48Fsl5wR5WgefaV6LnbutyaCEIUVGRgcCDxWpljLTY/wDI5rcLyqIQ8do3Faxy0lm2qsiy9uoI3qJjIXTbGnnZNSsiyCNkwFNrVPq02unnlTDVNrVMMU2aeOVFl7ZFFzU2aQCkEgpWQACMiYUrqbVDInZTuldTZorJWUkKbXSNkJlCbNECsqnj4nwXnBFfU7vispS0CEIUUIQhAIQhBCSO/esZzbb1mKL2A71RhFgSMYXrJGR+agrtNIAKaSLqh2TSBTUASop2SsqFZSukkgaLpJIJXSuo3SuoJ3RdQupNF1BJesMN9Tu+KnFBbU+S91FCEIQCEIQCEIQCEIQCEIQC8XwjhovZCDCe0jeF5lbErxfTtPZ3LUqMS6YK9HUzuFj7l5ljhvBV6Q7ouoJ3TS7SukldF00bNIpgE7gSptgceFu9B4lJZbaUcT5L2ZGBuCmxix0xO/T4rKjjDdw8eKmhZUIQhAIQhAIQhB//2Q==">'
+ }
+ // output
+ return picture;
+
+}
+        
+document.write(showtype());
+
+        </script>
+   
+
+
+ }
+
+ 
+
+
+</script>
+
+
+
+        <button onclick="myFunction1()">Q2</button>
+
+        <p id="demo1"></p>
+        
+        <script>
+        function myFunction1() {
+          var text;
+          var favDrink = prompt("What's your favorite Movei??");
+          switch(favDrink) {
+            case "the god father":
+              text = "Excellent. it's my favorite too";
+              break;
+            case "the shawshank redumtion":
+              text = "Excellent. it's my favorite too";
+              break;
+            case "the dark knight":
+              text = "Excellent. it's my favorite too";
+              break;
+            default:
+              text = "I SHOULD ADD IT TO MY SITE..";
+          }
+          document.getElementById("demo1").innerHTML = text;
+        }
+        </script>
+
+
+
+   <header>
+       <h1>
+           No fun No life
+       </h1>
+       <nav>
+           <ul>
+               <li>
+                   <a href="https://omar7100.github.io/entertainment/">
+                       TV-shows
+                   </a>
+               </li>
+               <li>
+                   <a href="https://ahmadboxx.github.io/entertainment/">
+                       Anime
+                   </a>
+               </li>
+               <li>
+                   <a href="https://obadeh.github.io/ENTERTAINMENT/">
+                       Movies
+                   </a>
+               
+                </li>
+
+               <li>
+                   <a href="https://ibrahim-hikari.github.io/entertainment/">
+                    MAIN 
+                
+                </a>
+              
+                </li>
+
+               <li>
+                    <a href="">
+                        Contact us
+                    </a>
+                </li>
+           </ul>
+       </nav>
+   </header>
+   <main>
+
+        <h1> The Best Movies Of All Time
+            
+
+    
+        </h1>
+
+
+
+   <article class="text">
+
+       <section>
+             
+             <img id="ab" src="https://a.ltrbxd.com/resized/sm/upload/78/y5/zg/ej/oefdD26aey8GPdx7Rm45PNncJdU-0-230-0-345-crop.jpg?k=582b0428f7" alt="">
+             <p>The Dark Knight.
+
+                    The Dark Knight is a 2008 superhero film directed, co-produced, and co-written by Christopher Nolan. Based on the DC Comics character Batman, the film is the second installment of Nolan's The Dark Knight Trilogy and a sequel to 2005's Batman Begins, starring Christian Bale and supported by Michael Caine, Heath Ledger, Gary Oldman, Aaron Eckhart, Maggie Gyllenhaal, and Morgan Freeman.
+        
+                </p>
+
+
+       </section>
+
+       <img id="ac" src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg" alt="">
+       
+       <p>The God Father.
+
+          
+        
+        
+        This article is about the 1972 film. For the original novel on which the film is based, see The Godfather (novel). For other uses, see Godfather. The Godfather is a 1972 American crime film directed by Francis Ford Coppola and produced by Albert S. Ruddy, based on Mario Puzo's best-selling novel of the same name. It stars Marlon Brando and Al Pacino as the leaders of a fictional New York crime family. The story, spanning 1945 to 1955, chronicles the family under the patriarch Vito Corleone (Brando), focusing on the transformation of Michael Corleone (Pacino) from reluctant family outsider to ruthless mafia boss.
+       
+        </p>
+       
+       <section>
+           <img id="ad" src="https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg" alt="">
+
+           <p>The Shawshank Redemption.
+
+                The Shawshank Redemption is a 1994 American drama film written and directed by Frank Darabont, based on the 1982 Stephen King novella Rita Hayworth and Shawshank Redemption. It tells the story of banker Andy Dufresne (Tim Robbins), who is sentenced to life in Shawshank State Penitentiary for the murders of his wife and her lover, despite his claims of innocence. Over the following two decades, he befriends a fellow prisoner, contraband smuggler Ellis "Red" Redding (Morgan Freeman), and becomes instrumental in a money-laundering operation led by the prison warden Samuel Norton (Bob Gunton). William Sadler, Clancy Brown, Gil Bellows, and James Whitmore appear in supporting roles.
+
+
+
+           </p>
+
+
+
+       </section>
+   </article>
+   <article>
+       <section>
+       </section>
+       <section>
+       </section>
+   </article>
+   </main>
+   <footer>
+       copyrights 2022
+   </footer>
+</body>
+</html>

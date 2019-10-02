@@ -14,7 +14,24 @@ main p {
 }
 
 body {
+    margin: 0%;
+    padding: 0%;
     background-color: black
+}
+
+button{
+    position: absolute;
+    transform: translate(580%,50%);
+    padding: 10px;
+    background: #fff;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    text-transform: uppercase; 
+    cursor: pointer;
+
+
+
 }
 
 h3 {
