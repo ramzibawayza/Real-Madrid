@@ -46,8 +46,7 @@
 
     
     <script>
-    
-    var greeting;
+      var greeting;
       var w;
       w=prompt ("DO YOU LIKE THIS PAGE");
     if (w==="yes")
@@ -57,8 +56,42 @@
       } else {
         confirm('TRY THIS');
       }
+    //   document.write('<p>' + greeting + '</p>');
+    
+    
+    function creatgreeting(params) {} {
+    var today=new date ();
+    var hournow=prompt('enter a number between 0-23'); //today.gethour
+    var greeting;
+    if (hournow> 18 && hournow <24){
+        greeting = 'good evening!';
+    } else if (hournow> 12 && hournow <18){
+        greeting='good afternoon';
+    }else if (hournow> 0 && hournow <12){
+        greeting='good morning'
+    }else{
+        greeting='welcome'
+    }
+    return greeting;
+}
 
-       
+var showorder=function {} {
+    //input
+var userorder=prompt('what would you like to order');
+var orderimage
+//processing
+if (userorder==='house'){
+    orderimage='<img src="images/house.png">';
+}else if (userorder==='hotel'){
+    orderimage='<img src="images/hotel.png">';
+}
+//output
+return orderimage;
+};a
+
+    
+
     </script>
     </body>
 </html>
+
