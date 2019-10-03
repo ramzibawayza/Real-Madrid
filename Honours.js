@@ -1,3 +1,15 @@
+var name=prompt("WHAT IS YOUR NAME?")
+alert("hello  "+name);
+
+var champion=prompt ("How many times Real madrid won in LaLiga?");
+
+while (champion != 33) {
+champion = prompt ("Sorry incorrect awnswer, please enter How many times Real madrid won in LaLiga?");
+ }
+if (champion == 33) {
+alert ("THAT IS THE GREAT AWNSWER");
+} 
+
 var showorder=function () {
     //input
     
