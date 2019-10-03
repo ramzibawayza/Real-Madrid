@@ -19,6 +19,12 @@ body {
     background-color: black
 }
 
+.style{
+    width: 250px;
+    height: 250 px;
+    margin: 10px;
+}
+
 button{
     position: absolute;
     transform: translate(580%,50%);
